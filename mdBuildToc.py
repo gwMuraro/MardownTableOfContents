@@ -33,7 +33,7 @@ def recFindTitles(pattern, doc, pos, to, level) :
 
   return str 
 
-with open('data') as file : 
+with open('example.md') as file : 
   doc = file.read()
   str = recFindTitles(patterns[0], doc, 0, len(doc), 0)
 print(str)
